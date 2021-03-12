@@ -1,0 +1,370 @@
+/*=======================
+    REGLAS GENERALES
+========================*/
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+:target {
+    scroll-margin-top: 5rem;
+}
+
+body {
+    background-color: rgba(229,235,241, 1) !important;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;        position: relative;
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:link,
+a {
+    text-decoration: none !important;
+}
+
+img {
+    width: 100%;
+}
+
+.container-home{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5% 4% 0 4%;
+    /* border:solid blue; */
+}
+
+h1{
+    font-weight: bold;
+
+}
+/*==================================
+            SECTION CURSOS
+===================================*/
+.cursos-container{
+    background-color: rgba(252, 252, 252,1);
+    padding: 5%;
+}
+
+.title-cursos{
+    text-align: center;
+    padding-bottom: 5%;
+} 
+
+.card{
+    border-radius: 0.3em !important;
+    margin-bottom: 3% !important;
+    box-sizing: border-box;
+    border:none;
+    background-color: rgba(252, 252, 252,1);
+
+}
+.card-header{
+    padding: 0;
+}
+
+.card-header div{
+    padding: 1em;
+}
+
+.content-curso{
+    background-color: rgba(252, 252, 252,1);
+}
+
+.modulo{
+    padding: 0;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.modulo span{
+    background-color: rgba(248, 217, 91,1);
+    padding: 0.8em;
+    border-radius: 0.3em;
+}
+
+.fa-plus{
+    margin-right:0.5em;
+    color: rgba(248, 217, 91,1);
+}
+
+.card-body .btn{
+    text-align: left;
+    width: 100%;
+}
+
+.diagrama-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.fa-image{
+    font-size: 2.5em;
+    padding: 0.2em ;
+}
+
+.diagrama-body{
+    text-align: left;
+}
+
+.fa-file-pdf{
+    font-size: 2em;
+    color:rgba(231, 43, 28,1);
+    padding: 0.2em;
+}
+
+.content-flujo{
+    text-align: center;
+    border:solid 2px rgba(202, 202, 202,1);
+}
+
+.content-youtube{
+    display: flex;
+    justify-content: center;
+    margin:1% 0 3% 0;
+}
+
+.content-pdf{
+    padding-top:3% ;
+}
+
+.body-pdf{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/*==================================
+            SECTION QUIZES
+===================================*/
+.container-sidebar{
+    box-sizing: border-box !;
+    /* border:solid red; */
+    margin: 0 0 1em 2em !important;    
+}
+
+.title-sidebar{
+    color: rgba(45, 65, 166,1);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.content-quizes{
+    margin-bottom: 5%;
+}
+
+.quiz,
+.install{
+    background-color: rgba(252, 252, 252,1);
+    border-radius: 0.3em !important;
+    padding: 2% 0; 
+    margin-bottom: 2%;  
+}
+
+.quiz a,
+.install a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-list-alt{
+    font-size: 2em;
+}
+
+.quiz-body,
+.install-body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.quiz-body span,
+.install-body span{
+    padding: 0.2em;
+}
+
+.quiz-body-title,
+.install-body-title{
+    font-weight: bold;
+}
+
+/*=======================================
+        SECTION VIDEO INSTALACIOn
+========================================*/
+.fa-youtube{
+    font-size: 2em;
+    color: rgba(196, 48, 43, 1);
+}
+
+.content-video{
+    text-align: center;
+}
+
+.ytplayer-none{
+    display:none;
+}
+
+
+/*==============================================================================================
+                                        MEDIA QUERIES
+=================================================================================================*/
+/* @media (min-width: 1200px) {} */
+
+
+/*============================
+        Media 992px
+===============================*/
+
+@media (min-width: 992px) {
+    
+}
+
+
+/*============================
+        Media 768px
+===============================*/
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .container-home{
+        grid-template-columns: 1fr;
+        margin: 5% 4% 2% 4%;
+    }
+    
+    .modal-content{
+        width: 720px !important;
+        margin-left:-15% !important;
+    }
+
+    #ytplayer{
+        width: 600px;
+    }
+   }
+
+
+/*============================
+        Media 576px
+===============================*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-home{
+        grid-template-columns: 1fr;
+        margin: 5% 4% 2% 4%;
+    }
+
+    #ytplayer{
+        width: 100%;
+    }
+}
+
+
+/*============================
+        Media 575px
+===============================*/
+@media (max-width: 575.98px) { 
+
+    .title-cursos h1{
+        font-size: 1.6em;
+    }
+
+    .container-home{
+        grid-template-columns: 1fr;
+        margin: 5% 4% 2% 4%;
+    }
+
+    .btn{
+        font-size: 1em;
+    }
+    
+    .card-body{
+        padding: 1em 0 !important;
+    }
+    .modulo{
+        padding: 2% !important;
+        margin: 0 !important;
+        display: block;
+        font-size: 1em;
+    }
+    .modulo span{
+        display: block;
+        font-size: 1em;
+    }
+
+    .diagrama-content{
+        display: flex;
+        padding: 2% 15%;
+    }
+
+    .fa-image{
+        font-size: 2em;
+    }
+
+    .install-body-title,
+    .sub-title,
+    .content-flujo{
+        font-size: 0.9em;
+    }
+
+    #flujoStandard01{
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .content-youtube iframe{
+        width: 320px;
+        height: 240px;
+        box-sizing: border-box;
+
+    }
+
+    .title-sidebar{
+        text-align: center;
+        padding: 1em 0;
+    }
+    
+    .body-pdf{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .fa-file-pdf{
+        font-size: 1.7em;
+    }
+
+    .item-pdf span{
+        font-size: 0.9em;
+    }
+
+    .container-sidebar{
+        box-sizing: border-box;
+        margin: 0 !important;    
+    }
+    
+    .title-sidebar{
+        display: flex;
+        justify-content: center;
+    }
+        
+    .quiz,
+    .install{
+        margin-bottom: 3%;  
+    }
+    
+
+    .fa-list-alt{
+        font-size: 2em;
+    }
+    
+    .quiz-body,
+    .install-body{
+        justify-items: center;
+    }
+    
+
+    #ytplayer{
+        width: 100%;
+    }
+}

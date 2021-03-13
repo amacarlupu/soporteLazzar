@@ -1,5 +1,6 @@
 const modal = document.querySelector("#modalInstalaciones"); // Obtiene el valor del modal
 const modal2 = document.querySelector("#modalConexionODBC");
+const modal3 = document.querySelector("#modalFormatos");
 
 // Evento que escucha el click el modal para cerrar el modal y detener el video
 modal.addEventListener("click", detener);
@@ -15,6 +16,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // YouTube player after the API code downloads.
 let player;
 let playerODBC;
+let playerFormatos;
 
 function onYouTubePlayerAPIReady() {
   player = new YT.Player("ytplayer", {
@@ -32,8 +34,14 @@ function onYouTubePlayerAPIReady() {
     width: "720",
     videoId: "vF-plcWXUI4",
     events: {
-      // 'onReady': onPlayerReady,
-      // 'onStateChange': onPlayerStateChange
+    },
+  });
+
+  playerFormatos = new YT.Player("ytplayerFormatos", {
+    height: "420",
+    width: "720",
+    videoId: "cgULctNFSzE",
+    events: {
     },
   });
 }
@@ -48,6 +56,7 @@ function detener(event) {
   if (contentModal === "block") {
     player.stopVideo();
     playerODBC.stopVideo();
+    playerFormatos.stopVideo();
 
 //         if( player ){
 //             player.stopVideo();

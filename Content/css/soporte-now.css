@@ -35,7 +35,7 @@ img {
 .container-home{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 3% 4% 0 4%;
+    margin: 2% 4% 0 4%;
 }
 
 h1{
@@ -146,6 +146,10 @@ h1{
     grid-template-columns: repeat(3,1fr);
 }
 
+.modal-picture{
+    padding: 0;
+}
+
 .content-picture{
     display: flex;
     flex-direction: column;
@@ -160,11 +164,15 @@ h1{
 }
 
 .content-enlace-curso{
-    margin: 0.5% 0;
+    margin: 0.6% 0;
 }
 
 .content-enlace-curso a i{
     font-size: 1em;
+}
+
+.content-enlace-curso a:hover{
+    color: rgba(45, 65, 166,1);
 }
 
 /*==================================

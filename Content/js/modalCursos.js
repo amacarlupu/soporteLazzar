@@ -22,12 +22,22 @@ let playerFormatos;
 let ytOrdenCompra01;
 let ytOrdenCompra02;
 let ytOrdenCompra03;
+
 let ytIngresoAlmacen01;
 let ytIngresoAlmacen02;
+
 let ytRegistroCompras01;
 let ytRegistroCompras02;
+
 let ytGuiaRemision01;
 
+let ytFacturacion01;
+let ytFacturacion02;
+let ytFacturacion03;
+let ytFacturacion04;
+let ytFacturacion05;
+let ytFacturacion06;
+let ytFacturacion07;
 
 function onYouTubePlayerAPIReady() {
   player = new YT.Player("ytplayer", {
@@ -121,6 +131,62 @@ function onYouTubePlayerAPIReady() {
     events: {
     },
   });
+
+  ytFacturacion01 = new YT.Player("ytFacturacion01", {
+    height: "420",
+    width: "720",
+    videoId: "rfD578c_g5g",
+    events: {
+    },
+  });
+
+  ytFacturacion02 = new YT.Player("ytFacturacion02", {
+    height: "420",
+    width: "720",
+    videoId: "nM_v4Ft8McM",
+    events: {
+    },
+  });
+
+  ytFacturacion03 = new YT.Player("ytFacturacion03", {
+    height: "420",
+    width: "720",
+    videoId: "sfElyYxCJxs",
+    events: {
+    },
+  });
+
+  ytFacturacion04 = new YT.Player("ytFacturacion04", {
+    height: "420",
+    width: "720",
+    videoId: "uQTnihDsPvo",
+    events: {
+    },
+  });
+
+  ytFacturacion05 = new YT.Player("ytFacturacion05", {
+    height: "420",
+    width: "720",
+    videoId: "VazaFc5D9ho",
+    events: {
+    },
+  });
+
+  ytFacturacion06 = new YT.Player("ytFacturacion06", {
+    height: "420",
+    width: "720",
+    videoId: "32c_wv4BeaE",
+    events: {
+    },
+  });
+
+  ytFacturacion07 = new YT.Player("ytFacturacion07", {
+    height: "420",
+    width: "720",
+    videoId: "wDp_k3EXg0k",
+    events: {
+    },
+  });
 }
 
 // Funcion que pausa el video cuando el modal es "none"
@@ -141,5 +207,13 @@ function detenerVideo(event) {
     ytRegistroCompras01.stopVideo();
     ytRegistroCompras02.stopVideo();
     ytGuiaRemision01.stopVideo();
+
+    ytFacturacion01.stopVide0();
+    ytFacturacion02.stopVide0();
+    ytFacturacion03.stopVide0();
+    ytFacturacion04.stopVide0();
+    ytFacturacion05.stopVide0();
+    ytFacturacion06.stopVide0();
+    ytFacturacion07.stopVide0();
    }
 }

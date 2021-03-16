@@ -5,6 +5,7 @@ const modal3 = document.querySelector("#modalFormatos");
 // Evento que escucha el click el modal para cerrar el modal y detener el video
 modal.addEventListener("click", detener);
 modal2.addEventListener("click", detener);
+modal3.addEventListener("click", detener);
 
 // Load the IFrame Player API code asynchronously.
 var tag = document.createElement("script");

@@ -11,10 +11,10 @@ html {
 }
 
 body {
-    background-color: rgba(229,235,241, 1) !important;
+    background-color: rgba(229, 235, 241, 1) !important;
     box-sizing: border-box;
     margin: auto;
-    font-family: 'Poppins', sans-serif;        
+    font-family: 'Poppins', sans-serif;
     position: relative;
 }
 
@@ -32,242 +32,266 @@ img {
     width: 100%;
 }
 
-.container-home{
+.container-home {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 2% 4% 0 4%;
 }
 
-h1{
+h1 {
     font-weight: bold;
-
 }
+
 /*==================================
             SECTION CURSOS
 ===================================*/
-.cursos-container{
-    background-color: rgba(252, 252, 252,1);
+.cursos-container {
+    background-color: rgba(252, 252, 252, 1);
     padding: 4% 3% 2% 3%;
     margin-bottom: 3%;
+    box-sizing: border-box;
 }
 
-.title-cursos{
+.title-cursos {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
-} 
+    align-items: center;
+}
 
-.logo-now{
-    margin:2%;
+.logo-now {
+    margin: 2%;
     padding-bottom: 0.5%;
     width: 10%;
 }
 
-.card{
+.title-flujos{
+    color: rgba(45, 65, 166, 1);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.card {
     border-radius: 0.3em !important;
     margin-bottom: 3% !important;
     box-sizing: border-box;
-    border:none;
-    background-color: rgba(252, 252, 252,1);
+    border: none;
+    background-color: rgba(252, 252, 252, 1);
 
 }
-.card-header{
+
+.card-header {
     padding: 0;
 }
 
-.card-header div{
+.card-header div {
     padding: 1em;
 }
 
-.content-curso{
-    background-color: rgba(252, 252, 252,1);
+.content-curso {
+    background-color: rgba(252, 252, 252, 1);
 }
 
-.modulo{
+.modulo {
     padding: 0;
     box-sizing: border-box;
     padding: 1em;
 }
 
-.modulo span{
-    background-color: rgba(248, 217, 91,1);
+.modulo span {
+    background-color: rgba(248, 217, 91, 1);
     padding: 0.8em;
     border-radius: 0.3em;
 }
 
-.fa-plus{
-    margin-right:0.5em;
-    color: rgba(248, 217, 91,1);
+.fa-plus {
+    margin-right: 0.5em;
+    color: rgba(248, 217, 91, 1);
 }
 
-.card-body .btn{
+.card-body .btn {
     text-align: left;
     width: 100%;
 }
 
-.diagrama-content{
+.diagrama-content {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.diagrama-content .fa-image{
+.diagrama-content .fa-image {
     font-size: 2em;
-    padding: 0.2em ;
-    color: rgba(93, 77, 38,1);
+    padding: 0.2em;
+    color: rgba(93, 77, 38, 1);
 }
 
-.diagrama-body{
+.diagrama-body {
     font-size: 1.1em;
     text-align: left;
-    color: rgba(93, 77, 38,1);
+    color: rgba(93, 77, 38, 1);
 }
 
-.fa-file-pdf{
+.fa-file-pdf {
     font-size: 2em;
-    color:rgba(231, 43, 28,1);
+    color: rgba(231, 43, 28, 1);
     padding: 0.2em;
 }
 
-.content-flujo{
+.content-flujo {
     display: flex;
     justify-content: center;
     align-items: left;
-    border:solid 1px rgba(218, 218, 218,1);
+    border: solid 1px rgba(218, 218, 218, 1);
 }
 
-.content-youtube, .content-picture{
+.content-youtube,
+.content-picture {
     display: flex;
     justify-content: center;
-    margin:2% 0 5% 0;
+    margin: 2% 0 5% 0;
 }
 
-.content-youtube iframe{
-    box-shadow: 0px 0px 3px rgba(0,0,0,1);
+.content-youtube iframe {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }
 
-.content-pdf{
-    padding:3% 0 5% 0;
+.content-pdf {
+    padding: 3% 0 5% 0;
 }
 
-.item-pdf{
+.item-pdf {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: solid 1px rgba(229,235,241, 1);
+    border: solid 1px rgba(229, 235, 241, 1);
     padding: 0.2em;
     /* margin:1%; */
 }
 
-.item-pdf span{
+.item-pdf span {
     padding: 0 0.5em;
 }
 
-.body-pdf{
+.body-pdf {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.modal-picture{
+.modal-picture {
     padding: 0;
 }
 
-.content-picture{
+.content-picture {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.body-img{
+.body-img {
     align-content: center;
     width: 60%;
-    margin:0.5em;
+    margin: 0.5em;
 }
 
-.content-enlace-curso{
+.content-enlace-curso {
     margin: 0.6% 0;
 }
 
-.content-enlace-curso a i{
+.content-enlace-curso a i {
     font-size: 1em;
     /* color: rgba(133, 88, 198,1 ); */
-    color: rgba(93, 77, 38,1);
+    color: rgba(93, 77, 38, 1);
 }
 
-.content-enlace-curso a:hover{
-    color: rgba(45, 65, 166,1);
+.content-enlace-curso a:hover {
+    color: rgba(45, 65, 166, 1);
 }
 
 /*==================================
             SECTION QUIZES
 ===================================*/
-.container-sidebar{
+.container-sidebar {
     box-sizing: border-box !;
     /* border:solid red; */
-    margin: 0 0 1em 2em !important;    
+    margin: 0 0 1em 2em !important;
 }
 
-.title-sidebar{
-    color: rgba(45, 65, 166,1);
+.title-sidebar {
+    color: rgba(45, 65, 166, 1);
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 2%;
 }
 
-.content-quizes{
+.content-quizes {
     margin-bottom: 5%;
 }
 
 .quiz,
-.install{
-    background-color: rgba(252, 252, 252,1);
+.install {
+    background-color: rgba(252, 252, 252, 1);
     border-radius: 0.3em !important;
-    padding: 2% 0; 
-    margin-bottom: 2%;  
+    padding: 2% 0;
+    margin-bottom: 2%;
 }
 
 .quiz a,
-.install a{
+.install a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fa-list-alt{
+.fa-list-alt {
     font-size: 2em;
 }
 
 .quiz-body,
-.install-body{
+.install-body {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
 .quiz-body span,
-.install-body span{
+.install-body span {
     padding: 0.2em;
 }
 
 .quiz-body-title,
-.install-body-title{
+.install-body-title {
     font-weight: bold;
 }
 
 /*=======================================
         SECTION VIDEO INSTALACIOn
 ========================================*/
-.fa-youtube{
+.fa-youtube {
     font-size: 2em;
     color: rgba(196, 48, 43, 1);
 }
 
-.content-video{
+.content-video {
     text-align: center;
 }
 
+.content-logout {
+    padding: 1em;
+}
+
+.fa-sign-out-alt {
+    color: rgba(45, 65, 166, 1);
+    font-size: 2em;
+}
+
+.content-logout span {
+    color: rgba(45, 65, 166, 1);
+    font-weight: bold;
+    padding: 0.2em;
+}
 
 /*==============================================================================================
                                         MEDIA QUERIES
@@ -281,11 +305,11 @@ h1{
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
-    .title-cursos h1{
+    .title-cursos h1 {
         font-size: 2em;
     }
 
-    .content-youtube iframe{
+    .content-youtube iframe {
         width: 640px;
         height: 360px;
         box-sizing: border-box;
@@ -297,38 +321,46 @@ h1{
         Media 768px
 ===============================*/
 @media (min-width: 768px) and (max-width: 991px) {
-    
-    .container-home{
+
+    .container-home {
         grid-template-columns: 1fr;
         margin: 5% 4% 2% 4%;
     }
-    
-    .modal-content{
+
+    .modal-content {
         width: 720px !important;
-        margin-left:-15% !important;
+        margin-left: -15% !important;
     }
 
-    #ytplayer{
+    #ytplayer {
         width: 600px;
     }
-   }
+}
 
 
 /*============================
         Media 576px
 ===============================*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .container-home{
+    .container-home {
         grid-template-columns: 1fr;
         margin: 5% 4% 2% 4%;
     }
 
-    .body-pdf{
-        grid-template-columns: repeat(2,1fr);
+    .body-pdf {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .modal-body div{
-        width: 100%;
+    .content-video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-video iframe {
+        width: 640px;
+        height: 360px;
+        box-sizing: border-box;
     }
 }
 
@@ -336,108 +368,124 @@ h1{
 /*============================
         Media 575px
 ===============================*/
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
 
-    .title-cursos h1{
+    .title-cursos h1 {
         font-size: 1.6em;
     }
 
-    .container-home{
+    .container-home {
         grid-template-columns: 1fr;
-        margin: 5% 4% 2% 4%;
+        padding: 1.5%;
+        box-sizing: border-box !important;
     }
 
-    .btn{
+    .btn {
         font-size: 1em;
     }
-    
-    .card-body{
+
+    .card-body {
         padding: 1em 0 !important;
     }
-    .modulo{
+
+    .modulo {
         padding: 2% !important;
         margin: 0 !important;
         display: block;
         font-size: 1em;
     }
-    .modulo span{
+
+    .modulo span {
         display: block;
         font-size: 1em;
     }
 
-    .diagrama-content{
+    .diagrama-content {
         display: flex;
         padding: 2% 15%;
     }
 
-    .fa-image{
+    .fa-image {
         font-size: 2em;
     }
 
     .install-body-title,
     .sub-title,
-    .content-flujo{
+    .content-flujo {
         font-size: 0.9em;
     }
 
-    #flujoStandard01{
+    #flujoStandard01 {
         padding: 0;
         box-sizing: border-box;
     }
 
-    .content-youtube iframe{
+    .content-video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-video iframe {
         width: 320px;
         height: 240px;
         box-sizing: border-box;
     }
 
-    .title-sidebar{
+    .title-sidebar {
         text-align: center;
         padding: 0;
     }
 
-    .content-pdf{
-        padding:3% 0 7% 0;
-    }
-    
-    .body-pdf{
-        grid-template-columns: repeat(2,1fr);
+    .content-pdf {
+        padding: 3% 0 7% 0;
     }
 
-    .fa-file-pdf{
+    .body-pdf {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fa-file-pdf {
         font-size: 1.7em;
     }
-    
-    .item-pdf span{
+
+    .item-pdf{
+        padding: 0.1em;
+    }
+
+    .item-pdf span {
         font-size: 0.9em;
     }
 
-    .container-sidebar{
+    .container-sidebar {
         box-sizing: border-box;
-        margin: 0 !important;    
+        margin: 0 !important;
     }
-    
-    .title-sidebar{
+
+    .title-sidebar {
         display: flex;
         justify-content: center;
     }
-        
-    .quiz,
-    .install{
-        margin-bottom: 3%;  
-    }
-    
 
-    .fa-list-alt{
+    .quiz,
+    .install {
+        margin-bottom: 3%;
+    }
+
+
+    .fa-list-alt {
         font-size: 2em;
     }
-    
+
     .quiz-body,
-    .install-body{
+    .install-body {
         justify-items: center;
     }
-    
-    .modal-body div{
-        width: 100%;
+
+    .content-logout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }

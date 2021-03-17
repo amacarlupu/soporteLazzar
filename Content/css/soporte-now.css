@@ -48,12 +48,21 @@ h1{
 .cursos-container{
     background-color: rgba(252, 252, 252,1);
     padding: 4% 3% 2% 3%;
+    margin-bottom: 3%;
 }
 
 .title-cursos{
-    text-align: center;
-    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
 } 
+
+.logo-now{
+    margin:2%;
+    padding-bottom: 0.5%;
+    width: 10%;
+}
 
 .card{
     border-radius: 0.3em !important;
@@ -107,8 +116,6 @@ h1{
 .diagrama-content .fa-image{
     font-size: 2em;
     padding: 0.2em ;
-    /* color: rgba(234, 76, 137,1 ); */
-    /* color: rgba(133, 88, 198,1 ); */
     color: rgba(93, 77, 38,1);
 }
 
@@ -142,7 +149,20 @@ h1{
 }
 
 .content-pdf{
-    padding-top:3% ;
+    padding:3% 0 5% 0;
+}
+
+.item-pdf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px rgba(229,235,241, 1);
+    padding: 0.2em;
+    /* margin:1%; */
+}
+
+.item-pdf span{
+    padding: 0 0.5em;
 }
 
 .body-pdf{
@@ -303,7 +323,11 @@ h1{
         margin: 5% 4% 2% 4%;
     }
 
-    #ytplayer{
+    .body-pdf{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .modal-body div{
         width: 100%;
     }
 }
@@ -369,7 +393,11 @@ h1{
 
     .title-sidebar{
         text-align: center;
-        padding: 1em 0;
+        padding: 0;
+    }
+
+    .content-pdf{
+        padding:3% 0 7% 0;
     }
     
     .body-pdf{
@@ -379,7 +407,7 @@ h1{
     .fa-file-pdf{
         font-size: 1.7em;
     }
-
+    
     .item-pdf span{
         font-size: 0.9em;
     }
@@ -409,7 +437,6 @@ h1{
         justify-items: center;
     }
     
-
     .modal-body div{
         width: 100%;
     }

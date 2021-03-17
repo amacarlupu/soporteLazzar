@@ -21,7 +21,7 @@ let playerFormatos;
 
 let ytOrdenCompra01;
 let ytOrdenCompra02;
-let ytOrdenCompra03;
+let ytOrdenCompra07;
 
 let ytIngresoAlmacen01;
 let ytIngresoAlmacen02;
@@ -71,8 +71,6 @@ function onYouTubePlayerAPIReady() {
     width: "720",
     videoId: "OQ4TzJh_HUc",
     events: {
-      // 'onReady': onPlayerReady,
-      // 'onStateChange': onPlayerStateChange
     },
   });
 
@@ -84,7 +82,7 @@ function onYouTubePlayerAPIReady() {
     },
   });
 
-  ytOrdenCompra03 = new YT.Player("ytOrdenCompra03", {
+  ytOrdenCompra07 = new YT.Player("ytOrdenCompra07", {
     height: "420",
     width: "720",
     videoId: "P-AGlQizshc",
@@ -201,11 +199,14 @@ function detenerVideo(event) {
 
     ytOrdenCompra01.stopVideo();
     ytOrdenCompra02.stopVideo();
-    ytOrdenCompra03.stopVideo();
+    ytOrdenCompra07.stopVideo();
+
     ytIngresoAlmacen01.stopVideo();
     ytIngresoAlmacen02.stopVideo();
+
     ytRegistroCompras01.stopVideo();
     ytRegistroCompras02.stopVideo();
+    
     ytGuiaRemision01.stopVideo();
 
     ytFacturacion01.stopVide0();

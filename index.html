@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" , initial-scale=1, maximum-scale=1>
+  <meta name="viewport" content="width=device-width" initial-scale=1, maximum-scale=1>
   <title>Soporte Lazzar Solutions</title>
   <meta name="description" content="Encuentre el mejor software ERP dólar por dólar para su organización.">
   <meta name="keywords" content="ERP Software Solutions, Enterprise resource plannning">
@@ -15,7 +15,9 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/fa47aaf5dc.js" crossorigin="anonymous"></script>
   <link href="./Content/css/soporte-now.css" rel="stylesheet" type="text/css">
-  <!-- <script src="./Content/js/tutorial.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./Content/js/tutorial.js"></script>
+
 </head>
 
 <body>
@@ -113,7 +115,7 @@
       <div class="accordion" id="accordionExample">
 
         <div class="title-sidebar">
-          [Flujos Version BETA]
+          [Flujos NOW - En Construcción]
         </div>
 
         <div class="card">
@@ -151,51 +153,60 @@
                   <div class="collapse" id="flujoStandard01">
                     <div class="card card-body content-flujo">
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra01" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra01" class="apiModal">
                           <i class="fas fa-video"></i>
-                          <span>Generación de Orde de Compra Directa</span>
+                          <span>Generación de Orden de Compra Directa</span>
                         </a>
                       </div>
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra02" class="">
+                      <!-- <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra02" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Generación de Orden de Compra a partir de un requerimiento</span>
                         </a>
-                      </div>
+                      </div> -->
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra03" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra03" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Cambiar Tipo de manejo de correlativo (automatico o serie)</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra04" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra04" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Modificar la serie de una Orden de Compra</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra05" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra05" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Adelantar o Retroceder el correlativo de Orden de Compra</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra06" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra06" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Añadir datos adicionales de Orden de Compra</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra07" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra07" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Aprobación de una Orden de Compra</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra08" class="">
-                          <i class="far fa-image"></i>
+                        <a type="button" data-toggle="modal" data-target="#modalOrdenCompra08" class="apiModal">
+                          <i class="fas fa-video"></i>
                           <span>Anulación - Eliminación de Orden de Compra</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso a-quiz" id="quizLink">
+                        <a href="./quizes.html" target="_blank" class="" data-target="quiz01">
+                          <i class="far fa-list-alt"></i>
+                        </a>
+                        <div class="title-quizes-curso">
+                          <span class="">QUIZ 01- Orden de Compra</span>
+                        </div>
                         </a>
                       </div>
                     </div>
@@ -209,15 +220,108 @@
                   <div class="collapse" id="flujoStandard02">
                     <div class="card card-body content-flujo">
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen01" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen01" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Ingreso de Saldo Inicial</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen02" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen02" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Ingreso de Productos</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen03" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Anulacion de Ingreso de almacen</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen04" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Transferencia entre almacenes</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen05" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Ingreso por ajustes de Inventario</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen06" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Ingreso por devolucion Nota de Credito</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen07" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Ingreso de Orden de Produccion</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen08" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Reingreso de Orden de Produccion</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen09" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Creacion de Almacenes</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen10" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Activar Almacenes por usuario</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen11" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Mover correlativos de Almacen</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen12" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Bloquear Ajustes de inventario por Usuario</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen13" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Bloquear Modificacion de Fecha de Ingreso</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen14" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Agregar modificar tipos de movimientos Ingresos</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen15" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Ingreso a Almacen desde Orden de Compra</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalIngresoAlmacen16" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Ingreso a Almacen desde Orden de Compra con referencias (lotes)</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso a-quiz" id="quizLink">
+                        <a href="./quizes.html" target="_blank" class="" data-target="quiz02">
+                          <i class="far fa-list-alt"></i>
+                        </a>
+                        <div class="title-quizes-curso">
+                          <span class="">NOW Quiz 02 - Almacén</span>
+                        </div>
                         </a>
                       </div>
                     </div>
@@ -231,15 +335,66 @@
                   <div class="collapse" id="flujoStandard03">
                     <div class="card card-body content-flujo">
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras01" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras01" class="apiModal">
                           <i class="fas fa-video"></i>
-                          <span>Registro de Compras</span>
+                          <span>Registro de compras con Orden de Compra</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras02" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras02" class="apiModal">
                           <i class="fas fa-video"></i>
-                          <span>Registro de Compras sin Orden</span>
+                          <span>Registro de compras sin Orden de Compra - Gastos</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras03" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Anulación de Documentos Proveedores</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras04" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Registro Rapido con Favoritos</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras05" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Registro de Detraccion en Registro de compras</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras06" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Creacion de Tipos de documentos</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras07" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Registro de Recibo por Honorarios</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras08" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Adjuntar archivos al registro de compras</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalRegistroCompras09" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Buscar un registro de compras</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso a-quiz" id="quizLink">
+                        <a href="./quizes.html" target="_blank" class="" data-target="quiz03">
+                          <i class="far fa-list-alt"></i>
+                        </a>
+                        <div class="title-quizes-curso">
+                          <span class="">NOW Quiz 03 - Registro de Compras</span>
+                        </div>
                         </a>
                       </div>
                     </div>
@@ -253,9 +408,48 @@
                   <div class="collapse" id="flujoStandard04">
                     <div class="card card-body content-flujo">
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision01" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision01" class="apiModal">
                           <i class="fas fa-video"></i>
-                          <span>Proceso de Inventarios</span>
+                          <span>Guias de Remision de Traslado</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision02" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Guia de Remision desde Pedidos-Cotizaciones (2 modalidades)</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision03" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Guia de Remision Directa para Facturacion Posterior</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision04" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Impresion Consolidada - Detallada y Det.Resumen</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision05" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Guia de Remision Electrónica - Consideraciones</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso">
+                        <a type="button" data-toggle="modal" data-target="#modalGuiasRemision06" class="apiModal">
+                          <i class="fas fa-video"></i>
+                          <span>Opciones adicionales de Guias de Remision</span>
+                        </a>
+                      </div>
+                      <div class="content-enlace-curso a-quiz" id="quizLink">
+                        <a href="./quizes.html" target="_blank" class="" data-target="quiz04">
+                          <i class="far fa-list-alt"></i>
+                        </a>
+                        <div class="title-quizes-curso">
+                          <span class="">NOW Quiz 04 - Guía de Remisión</span>
+                        </div>
                         </a>
                       </div>
                     </div>
@@ -269,43 +463,43 @@
                   <div class="collapse" id="flujoStandard05">
                     <div class="card card-body content-flujo">
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion01" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion01" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Registrar nuevo Cliente</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion02" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion02" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Registrar pedido</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion03" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion03" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>NOW ERP - Tipos de Facturación</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion04" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion04" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Despacho y Facturación</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion05" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion05" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Facturación POS</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion06" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion06" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Generar Nota de Crédito y Débito</span>
                         </a>
                       </div>
                       <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
+                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="apiModal">
                           <i class="fas fa-video"></i>
                           <span>Configurar Lista de Precios</span>
                         </a>
@@ -548,656 +742,6 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <div class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#flujoAdministrativo"
-              aria-expanded="true" aria-controls="collapseTwo">
-              2. FLUJO ADMINISTRACION-FINANZAS(Parte 1): Canje de Letras Clientes-Proveedores,
-              Cobranza,PagoProveedores
-            </div>
-          </div>
-          <div id="flujoAdministrativo" class="collapse content-curso" aria-labelledby="headingTwo"
-            data-parent="#accordionExample">
-            <div class="card-body">
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoAdminCobranza" aria-expanded="false"
-                  aria-controls="flujoAdminCobranza">Cobranza</span>
-              </div>
-              <div class="collapse" id="flujoAdminCobranza">
-                <div class="card card-body">
-
-                  <div class="btn sub-title" type="button" data-toggle="collapse" data-target="#flujoAdminCobranza01"
-                    aria-expanded="false" aria-controls="flujoAdminCobranza01">
-                    <i class="fas fa-plus"></i>
-                    Cobranzas
-                  </div>
-                  <div class="collapse" id="flujoAdminCobranza01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalCobranzas01" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Proceso de Cobranza</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoAdminLibro" aria-expanded="false"
-                  aria-controls="flujoAdminLibro">Libro Bancos</span>
-              </div>
-              <div class="collapse" id="flujoAdminLibro">
-                <div class="card card-body">
-
-                  <div class="btn sub-title" type="button" data-toggle="collapse" data-target="#flujoAdminLibro01"
-                    aria-expanded="false" aria-controls="flujoAdminLibro01">
-                    <i class="fas fa-plus"></i>
-                    Libro Bancos
-                  </div>
-                  <div class="collapse" id="flujoAdminLibro01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalLibroBancos01" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Libro Bancos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoAdminProveedores" aria-expanded="false"
-                  aria-controls="flujoAdminProveedores">Pago a Proveedores</span>
-              </div>
-              <div class="collapse" id="flujoAdminProveedores">
-                <div class="card card-body">
-
-                  <div class="btn sub-title" type="button" data-toggle="collapse" data-target="#flujoAdminProveedores01"
-                    aria-expanded="false" aria-controls="flujoAdminProveedores01">
-                    <i class="fas fa-plus"></i>
-                    Pago a Proveedores
-                  </div>
-                  <div class="collapse" id="flujoAdminProveedores01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalPagoProveedores01" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Pago a Proveedores</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoAdminFondosFijos" aria-expanded="false"
-                  aria-controls="flujoAdminFondosFijos">Fondos Fijos (Caja chica entrega a rendir)</span>
-              </div>
-              <div class="collapse" id="flujoAdminFondosFijos">
-                <div class="card card-body">
-
-                  <div class="btn sub-title" type="button" data-toggle="collapse" data-target="#flujoAdminFondosFijos01"
-                    aria-expanded="false" aria-controls="flujoAdminFondosFijos01">
-                    <i class="fas fa-plus"></i>
-                    Fondos Fijos (Caja chica entrega a rendir)
-                  </div>
-                  <div class="collapse" id="flujoAdminFondosFijos01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFondosFijos01" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Fondos Fijos (Caja chica entrega a rendir)</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <div class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#flujoContable"
-              aria-expanded="true" aria-controls="collapseThree">
-              3. FLUJO CONTABLE
-            </div>
-          </div>
-          <div id="flujoContable" class="collapse content-curso" aria-labelledby="headingThree"
-            data-parent="#accordionExample">
-            <div class="card-body">
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoContableContabilidad" aria-expanded="false"
-                  aria-controls="flujoContableContabilidad">Contabilidad</span>
-              </div>
-              <div class="collapse" id="flujoContableContabilidad">
-                <div class="card card-body">
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad01"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad01">
-                    <i class="fas fa-plus"></i>
-                    Procesos Contables
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Proceso Contables</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad02"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad02">
-                    <i class="fas fa-plus"></i>
-                    Generación de parametros de Interfaces
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad02">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Generación de parametros de Interfaces</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad03"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad03">
-                    <i class="fas fa-plus"></i>
-                    CONTABILIZACION del Registro de Compras
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad03">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>CONTABILIZACION del Registro de Compras</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad04"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad04">
-                    <i class="fas fa-plus"></i>
-                    CONTABILIZACION del Registro de Ventas, Exportacion, Muestras, Anticipos
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad04">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>CONTABILIZACION del Registro de Ventas, Exportacion, Muestras, Anticipos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad05"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad05">
-                    <i class="fas fa-plus"></i>
-                    CONSULTORIA Revision de la Interface Contable
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad05">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>CONSULTORIA Revision de la Interface Contable</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad06"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad06">
-                    <i class="fas fa-plus"></i>
-                    Asiento de Apertura
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad06">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Asiento de Apertura</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad07"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad07">
-                    <i class="fas fa-plus"></i>
-                    Revision de parametrizacion contable
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad07">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Revision de parametrizacion contable</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad08"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad08">
-                    <i class="fas fa-plus"></i>
-                    Generación de Pre-diario
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad08">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Generación de Pre-diario</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad09"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad09">
-                    <i class="fas fa-plus"></i>
-                    Revisión de Comprobantes de Diario Automáticos
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad09">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Revisión de Comprobantes de Diario Automáticos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad010"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad010">
-                    <i class="fas fa-plus"></i>
-                    Ingreso de Comprobantes de Diario
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad010">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Ingreso de Comprobantes de Diario</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad11"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad11">
-                    <i class="fas fa-plus"></i>
-                    Transferencia de Asientos Contables al Diario
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad11">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Transferencia de Asientos Contables al Diario</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad12"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad12">
-                    <i class="fas fa-plus"></i>
-                    Definición de Totales de rubros (E.E.F.F.)
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad12">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Definición de Totales de rubros (E.E.F.F.)</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad13"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad13">
-                    <i class="fas fa-plus"></i>
-                    Definición de Rubros de los Estados Financieros
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad13">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Definición de Rubros de los Estados Financieros</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad14"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad14">
-                    <i class="fas fa-plus"></i>
-                    Definición de Líneas de los Estados Financieros
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad14">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Definición de Líneas de los Estados Financieros</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad15"
-                    aria-expanded="false" aria-controls="flujoContableContabilidad15">
-                    <i class="fas fa-plus"></i>
-                    Proceso de valorizacion almacenes y op
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad15">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Proceso de valorizacion almacenes y op</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad16"
-                    aria-expanded=" false" aria-controls="flujoContableContabilidad16">
-                    <i class="fas fa-plus"></i>
-                    Cierre de modulo
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad16">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Cierre de modulo</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad17"
-                    aria-expanded=" false" aria-controls="flujoContableContabilidad17">
-                    <i class="fas fa-plus"></i>
-                    Cierre de mes
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad17">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Cierre de mes</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad18"
-                    aria-expanded=" false" aria-controls="flujoContableContabilidad18">
-                    <i class="fas fa-plus"></i>
-                    Cierre Contable de un Periodo
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad18">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Cierre Contable de un Periodo</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoContableContabilidad19"
-                    aria-expanded=" false" aria-controls="flujoContableContabilidad19">
-                    <i class="fas fa-plus"></i>
-                    Emisión de Estados Financieros
-                  </div>
-                  <div class="collapse" id="flujoContableContabilidad19">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Emisión de Estados Financieros</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <div class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#flujoPlanillas"
-              aria-expanded="true" aria-controls="collapseThree">
-              4. PLANILLAS
-            </div>
-          </div>
-          <div id="flujoPlanillas" class="collapse content-curso" aria-labelledby="headingThree"
-            data-parent="#accordionExample">
-            <div class="card-body">
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoPlanillasProvee" aria-expanded="false"
-                  aria-controls="flujoPlanillasProvee01">Planilla</span>
-              </div>
-              <div class="collapse" id="flujoPlanillasProvee">
-                <div class="card card-body">
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoPlanillas01"
-                    aria-expanded="false" aria-controls="flujoPlanillas01">
-                    <i class="fas fa-plus"></i>
-                    Definición de Parámetros y Tablas
-                  </div>
-                  <div class="collapse" id="flujoPlanillas01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Definición de Parámetros y Tablas</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoPlanillas02"
-                    aria-expanded="false" aria-controls="flujoPlanillas02">
-                    <i class="fas fa-plus"></i>
-                    Definición de Conceptos
-                  </div>
-                  <div class="collapse" id="flujoPlanillas02">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Definición de Conceptos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoPlanillas03"
-                    aria-expanded="false" aria-controls="flujoPlanillas03">
-                    <i class="fas fa-plus"></i>
-                    Asignación de Conceptos por Trabajador
-                  </div>
-                  <div class="collapse" id="flujoPlanillas03">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Asignación de Conceptos por Trabajador</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoPlanillas04"
-                    aria-expanded="false" aria-controls="flujoPlanillas04">
-                    <i class="fas fa-plus"></i>
-                    Cálculos y Procesos
-                  </div>
-                  <div class="collapse" id="flujoPlanillas04">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Cálculos y Procesos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoPlanillas05"
-                    aria-expanded="false" aria-controls="flujoPlanillas05">
-                    <i class="fas fa-plus"></i>
-                    Reportes de Planillas
-                  </div>
-                  <div class="collapse" id="flujoPlanillas05">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Reportes de Planillas</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="card">
-          <div class="card-header" id="headingFive">
-            <div class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#flujoProduccion"
-              aria-expanded="true" aria-controls="collapseThree">
-              4. PRODUCCIÓN
-            </div>
-          </div>
-          <div id="flujoProduccion" class="collapse content-curso" aria-labelledby="headingFive"
-            data-parent="#accordionExample">
-            <div class="card-body">
-
-              <div class="btn modulo" type="button">
-                <span data-toggle="collapse" data-target="#flujoProducionProd" aria-expanded="false"
-                  aria-controls="flujoProducionProd">Producción</span>
-              </div>
-              <div class="collapse" id="flujoProducionProd">
-                <div class="card card-body">
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoProducionProd01"
-                    aria-expanded=" false" aria-controls="flujoProducionProd01">
-                    <i class="fas fa-plus"></i>
-                    Generación de Formulación, Plan y Orden de Producción
-                  </div>
-                  <div class="collapse" id="flujoProducionProd01">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Generación de Formulación, Plan y Orden de Producción</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoProducionPro02"
-                    aria-expanded=" false" aria-controls="flujoProducionPro02">
-                    <i class="fas fa-plus"></i>
-                    Configuracion de lineas de costos indirectos de la empresa
-                  </div>
-                  <div class="collapse" id="flujoProducionPro02">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Configuracion de lineas de costos indirectos de la empresa</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoProducionPro03"
-                    aria-expanded=" false" aria-controls="flujoProducionPro03">
-                    <i class="fas fa-plus"></i>
-                    Revisar parametros de cuentas por linea de costo indirecto
-                  </div>
-                  <div class="collapse" id="flujoProducionPro03">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Revisar parametros de cuentas por linea de costo indirecto</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="btn" type="button" data-toggle="collapse" data-target="#flujoProducionPro04"
-                    aria-expanded=" false" aria-controls="flujoProducionPro04">
-                    <i class="fas fa-plus"></i>
-                    Criterios de asignacion costos indirectos
-                  </div>
-                  <div class="collapse" id="flujoProducionPro04">
-                    <div class="card card-body content-flujo">
-                      <div class="content-enlace-curso">
-                        <a type="button" data-toggle="modal" data-target="#modalFacturacion07" class="">
-                          <i class="fas fa-video"></i>
-                          <span>Criterios de asignacion costos indirectos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
       </div>
 
 
@@ -1260,371 +804,6 @@
           </div>
         </div>
       </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra01" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra01" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra01">Generación de Orde de Compra Directa</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra01"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra02" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra02" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra02">Generación de Orden de Compra a partir de un
-                requerimiento
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra02"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra03" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra03" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra03">Cambiar Tipo de manejo de correlativo (automatico o
-                serie)
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra03"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra04" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra04" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra04">Modificar la serie de una Orden de Compra</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra04"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra05" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra05" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra05">Adelantar o Retroceder el correlativo de Orden de Compra
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra05"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra06" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra06" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra06">Añadir datos adicionales de Orden de Compra</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra06"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra07" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalOrdenCompra07" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra07">Aprobación de Orden de Transacción</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytOrdenCompra07"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalOrdenCompra08" tabindex="-1" role="dialog"
-        aria-labelledby="modalOrdenCompra08" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalOrdenCompra08">Anulación de Orden de Compra</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-picture">
-              <span>NOW > PROVEEDORES > DOCUMENTOS > ORDEN DE COMPRA > ANULAR ORDEN DE TRANSACCIÓN</span>
-              <div class="body-img">
-                <img src="./Content/imagesSoporte/anularOrdenCompra.jpeg" alt="Anular Orden de Compra">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalIngresoAlmacen01" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalIngresoAlmacen01" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalIngresoAlmacen01">Ingreso de Saldo Inicial</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytIngresoAlmacen01"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalIngresoAlmacen02" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalIngresoAlmacen02" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalIngresoAlmacen02">Ingreso de Productos</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytIngresoAlmacen02"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalRegistroCompras01" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalRegistroCompras01" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalRegistroCompras01">Registro de Compras</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytRegistroCompras01"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalRegistroCompras02" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalRegistroCompras02" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalRegistroCompras02">Registro de Compras sin Orden</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytRegistroCompras02"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalGuiasRemision01" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalGuiasRemision01" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalGuiasRemision01">Proceso de Inventarios</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytGuiaRemision01"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion01" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion01" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion01">Registrar nuevo Cliente</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion01"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion02" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion02" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion02">Registrar Pedido</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion02"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion03" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion03" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion03">NOW ERP - Tipos de Facturación</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion03"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion03" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion03" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion03">NOW ERP - Tipos de Facturación</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion03"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion04" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion04" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion04">Despacho y Facturación</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion04"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion05" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion05" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion05">Facturación POS</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion05"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion06" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion06" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion06">Generar Nota de Crédito y Débito</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion06"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade modalCurso" id="modalFacturacion07" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFacturacion07" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFacturacion07">Configurar Lista de Precios</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytFacturacion07"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- FIN MODAL -->
 
     </section>
@@ -1637,47 +816,12 @@
     <!-- INICIO SECTION SIDEBAR -->
     <section class="container-sidebar">
 
-      <!-- INICIO SECTION QUIZES -->
-      <div class="container content-quizes">
-        <div class="title-sidebar row">Quizes Now</div>
-        <div class="quiz row">
-          <a href="#" class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-            <i class="far fa-list-alt"></i>
-          </a>
-          <div class="quiz-body col-xl-10 col-lg-10 col-md-10 col-sm-10">
-            <span class="quiz-body-title">QUIZ 1</span>
-            <span>Descripción del QUIZ 1</span>
-          </div>
-        </div>
-        <div class="quiz row">
-          <a href="#" class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-            <i class="far fa-list-alt"></i>
-          </a>
-          <div class="quiz-body col-xl-10 col-lg-10 col-md-10 col-sm-10">
-            <span class="quiz-body-title">QUIZ 2</span>
-            <span>Descripción del QUIZ 2</span>
-          </div>
-        </div>
-        <div class="quiz row">
-          <a href="#" class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-            <i class="far fa-list-alt"></i>
-          </a>
-          <div class="quiz-body col-xl-10 col-lg-10 col-md-10 col-sm-10">
-            <span class="quiz-body-title">QUIZ 3</span>
-            <span>Descripción del QUIZ 3</span>
-          </div>
-        </div>
-      </div>
-      <!-- FIN SECTION QUIZES -->
-      <!-- ====================================================================== -->
-
-
       <!-- INICIO SECTION VIDEOS INSTALACION -->
       <div class="container content-install">
         <div class="title-sidebar row">Instalación NOW</div>
         <div class="install row">
           <a type="button" data-toggle="modal" data-target="#modalInstalaciones"
-            class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+            class="col-xl-2 col-lg-2 col-md-2 col-sm-2 apiModal">
             <i class="fab fa-youtube"></i>
           </a>
           <div class="install-body col-xl-10 col-lg-10 col-md-10 col-sm-10">
@@ -1687,7 +831,7 @@
         </div>
         <div class="install row">
           <a type="button" data-toggle="modal" data-target="#modalConexionODBC"
-            class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+            class="col-xl-2 col-lg-2 col-md-2 col-sm-2 apiModal">
             <i class="fab fa-youtube"></i>
           </a>
           <div class="install-body col-xl-10 col-lg-10 col-md-10 col-sm-10">
@@ -1696,7 +840,8 @@
           </div>
         </div>
         <div class="install row">
-          <a type="button" data-toggle="modal" data-target="#modalFormatos" class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+          <a type="button" data-toggle="modal" data-target="#modalFormatos"
+            class="col-xl-2 col-lg-2 col-md-2 col-sm-2 apiModal">
             <i class="fab fa-youtube"></i>
           </a>
           <div class="install-body col-xl-10 col-lg-10 col-md-10 col-sm-10">
@@ -1706,59 +851,23 @@
         </div>
       </div>
 
-      <!-- MODAL -->
-      <div class="modal fade" id="modalInstalaciones" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalInstalaciones" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalInstalaciones">Instalación Sistema ERP</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytplayer"></div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="modal fade" id="modalConexionODBC" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalConexionODBC" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalConexionODBC">Conexión ODBC</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytplayerODBC"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modalFormatos" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="modalFormatos" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalFormatos">Modificación de Formatos</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body content-video">
-              <div id="ytplayerFormatos"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- FIN MODAL -->
       <!-- FIN SECTION VIDEOS INSTALACION -->
+
+
+      <div class="container content-install">
+        <div class="title-sidebar row mt-4">Errores Frecuentes</div>
+        <div class="install row">
+          <a class="error-sunat col-6" href="./listaErrores.html" target="_blank">
+            <!-- <span>Errores Frecuentes</span> -->
+            <img src="./Content/imagesSoporte/logoSUNAT.png" alt="">
+          </a>
+          <a class="error-sunat col-6" href="./listaErroresNOW.html" target="_blank">
+            <!-- <span>Errores Frecuentes</span> -->
+            <img src="./Content/imagesSoporte/logo-now-blanco.png" alt="">
+          </a>
+        </div>
+      </div>
 
       <!-- LOG OUT SOPORTE -->
       <div class="container content-logout">
@@ -1776,14 +885,17 @@
 
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
-  <script src="./Content/js/modalCursos.js"></script>
+  <!-- <script src="./Content/js/pruebas.js"></script> -->
+  <script src="./Content/js/getDataModal.js"></script>
+  <script src="./Content/js/getVariableQuiz.js"></script>
 
 </body>
 

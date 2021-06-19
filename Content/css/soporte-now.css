@@ -65,7 +65,7 @@ h1 {
     width: 10%;
 }
 
-.title-flujos{
+.title-flujos {
     color: rgba(45, 65, 166, 1);
     font-size: 1.2em;
     font-weight: bold;
@@ -211,6 +211,18 @@ h1 {
     color: rgba(45, 65, 166, 1);
 }
 
+.a-quiz{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-quizes-curso{
+    margin-left: 0.4em;
+}
+
+.fa-list-alt{
+    color: rgba(45, 65, 166, 1) !important;
+}
 /*==================================
             SECTION QUIZES
 ===================================*/
@@ -278,8 +290,34 @@ h1 {
     text-align: center;
 }
 
+.content-video iframe{
+    height: 420px;
+    width: 720px;
+}
+
+/*=======================================
+        SECTION ERRORES FRECUENTES
+========================================*/
+
 .content-logout {
     padding: 1em;
+}
+
+.error-sunat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-sunat img {
+    width: 50%;
+}
+
+.error-sunat span {
+    color: rgba(45, 65, 166, 1);
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .fa-sign-out-alt {
@@ -292,6 +330,8 @@ h1 {
     font-weight: bold;
     padding: 0.2em;
 }
+
+
 
 /*==============================================================================================
                                         MEDIA QUERIES
@@ -314,6 +354,10 @@ h1 {
         height: 360px;
         box-sizing: border-box;
     }
+
+    .error-sunat img {
+        width: 60%;
+    }
 }
 
 
@@ -327,13 +371,32 @@ h1 {
         margin: 5% 4% 2% 4%;
     }
 
-    .modal-content {
-        width: 720px !important;
-        margin-left: -15% !important;
+    .container-sidebar {
+        box-sizing: border-box !;
+        margin: 0 !important;
     }
 
-    #ytplayer {
+    .modal-content {
+        width: 750px !important;
+        margin-left: -13% !important;
+    }
+    
+    .modal-video{
+        margin-left: -10% !important;
+    }
+    
+    .content-youtube iframe {
+        width: 640px;
+        height: 360px;
+        box-sizing: border-box;
+    }
+
+    .content-video iframe {
         width: 600px;
+    }
+
+    .error-sunat img {
+        width: 40%;
     }
 }
 
@@ -351,7 +414,7 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .content-video{
+    .content-video {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -361,6 +424,13 @@ h1 {
         width: 640px;
         height: 360px;
         box-sizing: border-box;
+    }
+
+    .error-sunat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -376,7 +446,7 @@ h1 {
 
     .container-home {
         grid-template-columns: 1fr;
-        padding: 1.5%;
+        /* padding: 1.5%; */
         box-sizing: border-box !important;
     }
 
@@ -420,7 +490,7 @@ h1 {
         box-sizing: border-box;
     }
 
-    .content-video{
+    .content-video {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -445,11 +515,12 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .fa-file-pdf {
-        font-size: 1.7em;
+    .fa-file-pdf,
+    .item-pdf .fa-youtube {
+        font-size: 1.5em;
     }
 
-    .item-pdf{
+    .item-pdf {
         padding: 0.1em;
     }
 
@@ -485,6 +556,13 @@ h1 {
     .content-logout {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error-sunat {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

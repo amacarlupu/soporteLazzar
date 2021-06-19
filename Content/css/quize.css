@@ -1,0 +1,150 @@
+/*=======================
+    REGLAS GENERALES
+========================*/
+
+body {
+    background-color: rgba(229, 235, 241, 1) !important;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:link,
+a {
+    text-decoration: none !important;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: rgba(45, 65, 166, 1);
+    font-weight: bold;
+    font-size: 2.2em;
+    padding: 0.2em;
+    text-align: center;
+}
+
+
+/*=======================================
+                QUIZES
+=======================================*/
+
+.content-quizes {
+    margin: 0.5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 790px;
+    height: 670px;
+}
+
+
+.load{
+    display: block;
+    padding:1em 0;
+    text-align: center;
+}
+
+.load.active{
+    display: none;
+}
+
+.load h4 {
+    margin: 2em 0
+}
+
+.load i {
+    font-size: 8em;
+}
+
+/*==============================================================================================
+                                        MEDIA QUERIES
+=================================================================================================*/
+/* @media (min-width: 1200px) {} */
+
+
+/*============================
+        Media 992px
+===============================*/
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+
+/*============================
+        Media 768px
+===============================*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    h1 {
+        font-size: 2em;
+        padding: 0.4em;
+    }
+
+    .content-quizes {
+        margin: 2% 5% 3% 5%;
+    }
+
+    iframe {
+        width: 750px;
+        height: 630px;
+    }
+
+}
+
+
+/*============================
+        Media 576px
+===============================*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 1.8em;
+        padding: 0.4em;
+    }
+
+    .content-quizes {
+        margin: 3% 0% 4% 0%;
+    }
+
+    iframe {
+        width: 630px;
+        height: 510px;
+    }
+
+}
+
+
+/*============================
+        Media 575px
+===============================*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.4em;
+        /* padding: 0.4em; */
+    }
+
+    .content-quizes {
+        margin: 0%;
+    }
+
+    iframe {
+        width: 350px;
+        height: 230px;
+    }
+
+}

@@ -1,10 +1,16 @@
+const btnModal = document.querySelectorAll('a[data-toggle="modal"]');
+
 const modalCursos = document.getElementsByClassName("modal");
 recorrerModal();
 
 
 function recorrerModal(){
-  for (let i=0; i<modalCursos.length;i++){
-    modalCursos[i].addEventListener("click", detenerVideo);
+  // for (let i=0; i<modalCursos.length;i++){
+  //   modalCursos[i].addEventListener("click", detenerVideo);
+  // }
+
+  for (let i=0; i<btnModal.length;i++){
+    btnModal[i].addEventListener("click", detenerVideo);
   }
 }
 
@@ -21,7 +27,7 @@ let playerFormatos;
 
 let ytOrdenCompra01;
 let ytOrdenCompra02;
-let ytOrdenCompra07;
+let ytOrdenCompra03;
 
 let ytIngresoAlmacen01;
 let ytIngresoAlmacen02;
@@ -82,7 +88,7 @@ function onYouTubePlayerAPIReady() {
     },
   });
 
-  ytOrdenCompra07 = new YT.Player("ytOrdenCompra07", {
+  ytOrdenCompra03 = new YT.Player("ytOrdenCompra03", {
     height: "420",
     width: "720",
     videoId: "P-AGlQizshc",
@@ -199,22 +205,22 @@ function detenerVideo(event) {
 
     ytOrdenCompra01.stopVideo();
     ytOrdenCompra02.stopVideo();
-    ytOrdenCompra07.stopVideo();
+    ytOrdenCompra03.stopVideo();
 
-    ytIngresoAlmacen01.stopVideo();
-    ytIngresoAlmacen02.stopVideo();
+    // ytIngresoAlmacen01.stopVideo();
+    // ytIngresoAlmacen02.stopVideo();
 
-    ytRegistroCompras01.stopVideo();
-    ytRegistroCompras02.stopVideo();
+    // ytRegistroCompras01.stopVideo();
+    // ytRegistroCompras02.stopVideo();
     
-    ytGuiaRemision01.stopVideo();
+    // ytGuiaRemision01.stopVideo();
 
-    ytFacturacion01.stopVide0();
-    ytFacturacion02.stopVide0();
-    ytFacturacion03.stopVide0();
-    ytFacturacion04.stopVide0();
-    ytFacturacion05.stopVide0();
-    ytFacturacion06.stopVide0();
-    ytFacturacion07.stopVide0();
+    // ytFacturacion01.stopVide0();
+    // ytFacturacion02.stopVide0();
+    // ytFacturacion03.stopVide0();
+    // ytFacturacion04.stopVide0();
+    // ytFacturacion05.stopVide0();
+    // ytFacturacion06.stopVide0();
+    // ytFacturacion07.stopVide0();
    }
 }
